@@ -1,0 +1,424 @@
+
+/* Fonts style */
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Regular.otf')  format('opentype'),
+	     url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSansPro-Book';
+  src: url('../fonts/FedraSansPro-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/FedraSansPro-Book.otf')  format('opentype'),
+	     url('../fonts/FedraSansPro-Book.woff') format('woff'), url('../fonts/FedraSansPro-Book.ttf')  format('truetype'), url('../fonts/FedraSansPro-Book.svg#FedraSansPro-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraMonoStd-Light';
+  src: url('../fonts/FedraMonoStd-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/FedraMonoStd-Light.otf')  format('opentype'),
+	     url('../fonts/FedraMonoStd-Light.woff') format('woff'), url('../fonts/FedraMonoStd-Light.ttf')  format('truetype'), url('../fonts/FedraMonoStd-Light.svg#FedraMonoStd-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraMonoStd-Demi';
+  src: url('../fonts/FedraMonoStd-Demi.eot?#iefix') format('embedded-opentype'),  url('../fonts/FedraMonoStd-Demi.otf')  format('opentype'),
+	     url('../fonts/FedraMonoStd-Demi.woff') format('woff'), url('../fonts/FedraMonoStd-Demi.ttf')  format('truetype'), url('../fonts/FedraMonoStd-Demi.svg#FedraMonoStd-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraMonoStd-Book';
+  src: url('../fonts/FedraMonoStd-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/FedraMonoStd-Book.otf')  format('opentype'),
+	     url('../fonts/FedraMonoStd-Book.woff') format('woff'), url('../fonts/FedraMonoStd-Book.ttf')  format('truetype'), url('../fonts/FedraMonoStd-Book.svg#FedraMonoStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FedraSansPro-Bold';
+  src: url('../fonts/FedraSansPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FedraSansPro-Bold.otf')  format('opentype'),
+	     url('../fonts/FedraSansPro-Bold.woff') format('woff'), url('../fonts/FedraSansPro-Bold.ttf')  format('truetype'), url('../fonts/FedraSansPro-Bold.svg#FedraSansPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* // End Fonts style */
+
+
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+/*a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}*/
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: #f5f5f5; color: #8f9293; -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto; font-size: 20px; line-height: 24px; font-family: 'FedraSansPro-Book'; }
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+
+h1,h2,h3,h4{font-style: normal; font-family: 'FedraSansPro-Book'; text-align: left; color: #505659; font-weight: normal;}
+
+h1{font-size: 84px; font-family: 'FedraMonoStd-Light';}
+h2{font-size: 35px; font-family: 'FedraMonoStd-Demi';}
+h3{font-size: 29px;}
+h4{font-size: 21px; font-family: 'FedraMonoStd-Book';}
+
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes slideUp {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+  }
+}
+@-o-keyframes slideUp {
+  0% {
+    -o-transform: translateY(0);
+  }
+  100% {
+    -o-transform: translateY(-100%);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes slideDown {
+  0% {
+    -o-transform: translateY(-100%);
+  }
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.common-wrap{max-width: 1290px; margin: 0 auto; clear: both; padding: 0 15px}
+
+.header-wrap{float: left; width: 100%; position: fixed; left: 0; top: 0;  -webkit-transition: all 1s cubic-bezier(.55,.085,0,.99); -moz-transition: all 1s cubic-bezier(.55,.085,0,.99); transition: all 1s cubic-bezier(.55,.085,0,.99); padding-top: 40px; background: #f5f5f5;  z-index: 999;}
+.header-wrap.go-top{-webkit-transform: translateY(-110%); -moz-transform: translateY(-110%); transform: translateY(-110%);}
+
+.headroom--pinned { -webkit-animation-name: slideDown; -moz-animation-name: slideDown; -o-animation-name: slideDown; animation-name: slideDown; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+.headroom--unpinned { -webkit-animation-name: slideUp; -moz-animation-name: slideUp; -o-animation-name: slideUp; animation-name: slideUp; -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
+
+.header-wrap .common-wrap{padding: 0 25px}
+.main-logo{float: left; width: 87px; margin-top: 5px; position: relative;}
+.main-logo img{width: 100%}
+.main-menu{float: right; display: inline-block}
+.main-menu ul{float: left; width: 100%}
+.main-menu ul li{display: inline-block; margin: 11px 30px 22px}
+.main-menu ul li:first-child{margin-left: 0px}
+.main-menu ul li:last-child{margin-right: 0px}
+.main-menu ul li a{color: #505559; font-size: 17px; font-family: 'FedraSansPro-Book'; line-height: 17px; text-transform: uppercase; position: relative; padding-bottom: 11px;}
+.main-menu ul li a:after{position: absolute; content: ""; bottom: 0px; left: 0;height: 6px; background: #505559; width: 100%; display: none}
+.main-menu ul li:hover a:after{display: block}
+.main-menu ul li.active a:after{display: block}
+/*.thum-content-wrap{float: left; width: 100%; position: relative; margin-top: 30px}*/
+
+.main-content-section{float: left; width: 100%; padding-bottom: 150px; padding-top: 105px;}
+.home-content{float: left; width: 100%; margin-top: 30px}
+.thum-content-row{float: left; width: 100%; position: relative;}
+.item-title{float: left; width: 100%; margin-top: 10px}
+.item-title h4{font-size: 21px; line-height: 24px; font-family: 'FedraMonoStd-Book'; }
+.item-thum-nature{float: left; width: 24.52380952380952%;}
+.item-thum-nature img{width: 100%}
+.item-thum-green{float: left; width: 38.73015873015873%; margin-left: 1.984126984126984%; /*margin-top: 140px; */ margin-top: 11.11111111111111%;}
+.item-thum-green img{width: 100%}
+.item-thum-vital{float: left; width: 32.61904761904762%; margin-left: 1.984126984126984%; /*margin-top: 404px; */ margin-top: 32.06349206349206%;}
+.item-thum-vital img{width: 100%}
+.item-thum-petley{float: left; width:34.20634920634921%; margin-left: 3.968253968253968%; /*margin-top: -50px; */ margin-top: -3.968253968253968%;}
+.item-thum-petley img{width: 100%}
+.item-thum-van{float: left; width: 20.63492063492063%; margin-left: 7.301587301587302%}
+.item-thum-van img{width: 100%}
+.item-thum-Spitz{width:24.68253968253968%; float:left; /*margin-top: 85px;*/ margin-top: 6.746031746031746%; margin-left:9.047619047619048% }
+.item-thum-Spitz img{width: 100%}
+.item-thum-mtn{position: absolute; width: 30.31746031746032%; right: 26.58730158730159%; /*top: 320px; */ top: 63.8%;}
+.item-thum-mtn img{width: 100%}
+.item-thum-shoecity{float: left; width: 24.52380952380952%;}
+.item-thum-shoecity img{width: 100%}
+.item-thum-logotype{float: left; width: 38.49206349206349%; margin-left: 1.984126984126984%; margin-top: 18.25396825396825%; /*margin-top: 230px;*/}
+.item-thum-logotype img{width: 100%}
+.item-thum-boss{float: left; width: 30.79365079365079%; margin-left: 3.968253968253968%; /*margin-top:190px; */ margin-top: 15.07936507936508%;}
+.item-thum-boss img{width: 100%}
+.thum-content-row:nth-child(3){margin-top: 130px}
+
+
+/*======= Beginning About Page ========*/
+
+.about-content-wrap{float: left; width: 100%; margin-top: 70px}
+.about-content-wrap h1{float: left; width: 100%; line-height: 87px}
+.content-main-thum{float: left; width: 100%; margin-top: 45px}
+.content-main-thum img{width: 100%}
+.detailes-content{float: left; width: 100%;margin-top: 65px}
+.detailes-content h2{line-height: 40px}
+.detailes-content p{max-width: 1024px; font-size: 35px; line-height: 40px; font-family: 'FedraMonoStd-Light'; margin-top: 25px}
+.content-second-thum{float: left; width: 100%; margin-top: 75px}
+.content-second-thum img{width: 100%}
+.acordian-wrap{float: left; width: 100%; margin-top: 50px}
+.acordian-wrap h2{padding-bottom: 50px}
+.acordian-item{float: left; width: 100%; border-top: 2px solid #646464;}
+.acordian-item.active{background: #ebebeb;}
+.acordian-item:last-child{border-bottom: 2px solid #646464 }
+.acordian-item h3{padding: 26px 160px 26px 20px; float: left; width: 100%; position: relative; line-height: 31px; cursor: pointer;}
+.acordian-item h3:after{position: absolute; content: ""; width: 31px; height: 31px; background-image: url(../images/plus.png); background-repeat: no-repeat; background-size: contain; background-position: center center; top: 26px; right: 45px;}
+.acordian-item.active h3:after{background-image: url(../images/minus.png); }
+.acordian-item p{float: left; width: 100%; padding:0 160px 75px 20px; display: none;}
+
+.client-wrap{float: left; width: 100%; margin-top: 100px}
+.client-thum{float: left; width: 100%; margin-top: 40px}
+.client-thum img{width: 100%}
+
+/*======= End About Page ========*/
+
+
+
+
+/*======= Beginning Contact Page ========*/
+
+.content-bottom-thum{float: left; width: 100%; margin-top: 130px}
+.content-bottom-thum img{width: 100%}
+.contact-detailes{float: left; width: 100%; margin-top: 65px}
+.contact-detailes a{font-size: 35px; color: #505659; font-family: 'FedraMonoStd-Demi';}
+.contact-detailes a:hover{text-decoration: underline;}
+.contact-detailes span{font-size: 35px; font-family: 'FedraMonoStd-Light'; color: #505659}
+.contact-detailes p{float: left; width: 100%; margin-top: 40px}
+.contact-detailes address{float: left; width: 100%; font-size: 35px; font-style: normal; font-family: 'FedraMonoStd-Light'; max-width: 490px; line-height: 40px; margin-top: 40px; color: #505659}
+/*======= End Contact Page ========*/
+
+
+
+/*======= Beginning Protfolio Page ========*/
+
+.protfolio-thum{float: left; width: 100%; margin-top: 50px}
+.protfolio-thum img{width: 100%}
+.protfolio-thum:first-child{margin-top: 70px}
+
+.content-wrap{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; align-items: center;}
+.left-content{float: left; /*width: 69.20634920634921%; max-width: 872px;*/ width: -webkit-calc(100% - 388px); width: calc(100% - 388px); padding-left: 17px; padding-right: 20px; position: relative; -webkit-box-ordinal-group: 1; -webkit-order: 1; -moz-order: 1; -ms-order: 1; order: 1;}
+.left-content p{font-size: 18px; line-height: 28px; padding-top: 30px;}
+.left-content p:first-child{padding-top: 0;}
+.left-content:before{position: absolute; right: 0; top: 0; bottom: 0; width: 3px; background: #95979a; content: "";}
+.content-title{float: left; /*width: 30.79365079365079%; max-*/width: 388px; padding-left: 35px; -webkit-box-ordinal-group: 2; -webkit-order: 2; -moz-order: 2; -ms-order: 2; order: 2;}
+.content-title h1{font-size: 40px; line-height: 45px;}
+.content-title h4{padding-top: 15px; font-family: 'FedraSansPro-Bold'; font-weight: normal; line-height: 32px; color: #95979a;}
+
+
+
+.phone-nav{position: absolute; right: 0px; top: 22px; width: 23px; display: none;}
+.phone-nav div{float: left; width: 100%; height: 2px; margin: 3px 0; background: #000000;}
+
+
+
+.animation-element{-webkit-transition: all 1s; -moz-transition: all 1s; transition: all 1s; opacity: 0;}
+.animate-from-bottom{-webkit-transform: translateY(150px); -moz-transform: translateY(150px); transform: translateY(150px);}
+.animate-from-top{-webkit-transform: translateY(-150px); -moz-transform: translateY(-150px); transform: translateY(-150px);}
+.animation-element.in-view{-webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); opacity: 1;}
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	
+    body{font-size: 14px; line-height: 22px;}    
+    h1,.about-content-wrap h1{font-size: 28px; line-height: 34px;}
+    h2{font-size: 22px; line-height: 26px;}
+    h3{font-size: 20px; line-height: 24px;}
+    .contact-detailes span, .contact-detailes a, .contact-detailes address{font-size: 18px; line-height: 24px;}
+    .contact-detailes address br{display: none;}
+    
+    .header-wrap{padding-top: 0; background: #ffffff; top: 1px; margin-top: -1px; z-index: 999;} 
+    .main-logo,.main-menu{float: left; width: 100%;}
+    .main-logo{margin: 0; padding: 10px 0 4px;}
+    .main-logo a{width: 75px;}
+    .phone-nav{display: block;}
+    
+    .main-menu{display: none; padding: 30px 0 20px;}
+    .main-menu ul li{display: block; width: 100%; text-align: center; margin: 5px 0 10px;}
+    .main-menu ul li a{font-size: 14px; padding-bottom: 6px;}
+    .main-menu ul li a:after{height: 2px;}
+    
+    .main-content-section{padding-bottom: 50px; padding-top: 61px;}
+    .header-wrap .common-wrap{padding: 0 15px;}
+    .item-title h4, h4{font-size: 18px; line-height: 22px;}
+    .home-content, .thum-content-row, .thum-content-row:nth-child(3){margin-top: 0;}
+    .item-thum-nature, .item-thum-green, .item-thum-vital, .item-thum-petley, .item-thum-van, .item-thum-Spitz, .item-thum-shoecity, .item-thum-logotype, .item-thum-boss, .item-thum-mtn{float: left; width: 100%; margin: 30px auto 0;}
+    .item-thum-mtn{position: relative; left: auto; right: auto; top: auto; bottom: auto;}
+    
+    .about-content-wrap, .content-main-thum, .content-second-thum, .acordian-wrap, .client-wrap, .client-thum, .detailes-content, .protfolio-thum:first-child, .contact-detailes p, .contact-detailes address, .content-bottom-thum{margin-top: 30px;}
+    .protfolio-thum{margin-top: 20px;}
+    .detailes-content p{font-size: 18px; line-height: 22px; margin-top: 15px;}
+    .acordian-wrap h2{padding-bottom: 30px;}
+    .acordian-item h3{padding: 15px 40px 15px 10px;}
+    .acordian-item h3:after{width: 15px; height: 15px; right: 15px; top: 22px;}
+    .acordian-item p{padding: 0 40px 25px 10px;}
+    .contact-detailes{margin-top: 0;}
+    
+    .animate-from-bottom{-webkit-transform: translateY(50px); -moz-transform: translateY(50px); transform: translateY(50px);}
+    .animate-from-top{-webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); transform: translateY(-50px);}
+    .animation-element.in-view{-webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0);}
+    
+    .content-wrap{display: block;}
+    .left-content,.content-title{width: 100%; padding: 0; padding-top: 30px;}
+    .left-content{margin-top: 20px;}
+    .left-content:before{width: 100%; height: 2px;}
+    .content-title h1{font-size: 28px; line-height: 34px;}
+    
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .contact-detailes address br{display: block;}
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	
+    .main-menu{display: block !important;}
+	
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	
+    
+    .main-menu{display: block !important;}
+	
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
